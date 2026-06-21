@@ -151,7 +151,6 @@ h1, h2, h3, .logo {
     background-color: var(--bg-cream);
     border-radius: 12px;
     padding: 20px;
-    /* box-shadow: 0 4px 6px rgba(62, 39, 35, 0.05); */
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
     transition: transform 0.3s ease;
 }
@@ -177,6 +176,13 @@ h1, h2, h3, .logo {
 
 .product-card h3 {
     font-size: 22.4px;
+    margin-bottom: 10px;
+}
+
+.product-price {
+    color: green;
+    font-weight: bold;
+    font-size: 18px;
     margin-bottom: 10px;
 }
 
@@ -302,38 +308,6 @@ footer {
 
 footer p {
     font-size: 14.4px;
-}
-
-/* --- responsive for tablet & mobile --- */
-@media (max-width: 768px) {
-    .nav-container {
-        flex-direction: column;
-        gap: 15px;
-        padding: 15px 20px;
-    }
-    
-    .nav-links {
-        gap: 20px;
-        flex-wrap: wrap; /* Allows links to wrap if screen is very narrow */
-        justify-content: center;
-    }
-
-    .hero {
-        padding: 60px 20px; /* Reduced vertical padding from 100px */
-    }
-
-    .hero-content h1 {
-        font-size: 40px; /* Scaled down for tablets */
-    }
-
-    .hero-content .tagline {
-        font-size: 18px;
-    }
-
-    .contact-grid {
-        grid-template-columns: 1fr;
-        gap: 40px; /* Increased gap to separate the map and form vertically */
-    }
 }
 
 /* --- responsive for tablet & mobile --- */
